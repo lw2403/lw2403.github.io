@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div>
+                <figure class="brand"></figure>
+                <nav class="menu">
+
+                    <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="menu-icon"><img src="images/dot.png"></label>
+                    <ul>
+                        <li><a href='./index.html'>
+                                Home</a>
+                        </li>
+                        <li class="Projects">
+                            <a href="javascript:;"> Projects</a>
+                            <div class="Projects_click">
+                                <a href="./learnwithgpt.html">Learnwithgpt</a>
+                                <a href="./worksDetails.html">Reach.live</a>
+                                <a href="./website.html">Sushi</a>
+                                <a href="./treeGift.html">Tree App</a>
+                                <a href="./testing.html">A/B Testing</a>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <a href='product.html'>About</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href='#'>Contact</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href='#'>Resume</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <div style="height: 50px; width: 100%;"></div>
+    <div class="masthead-video">
+
+        <video id="video" autoplay loop muted>
+            <source src="./videos/homevideo.mp4" type="video/mp4" />
+        </video>
+        <div class="masthead-video-title">
+            <span>Hi! I'm Angela Wang.</span>
+            <span> I design meaningful products empowered by technology.</span>
+        </div>
+
+    </div>
+    <div class="masthead-placeholder"></div>
+    <main>
+
+
+        <div class="mainWrapper">
+            <div class="project-covers">
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/1.png" alt="1jpg" class="img-xyz">
+                        <a href="./learnwithgpt.html" class="hideTitle">
+                            <span><em>learnwithgpt</em><em>Iterative Design</em>
+
+                            </span>
+                        </a>
+                        <!-- <a href="#" class="showTitle"><span>Reach.live</span><span>Iterative Design<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project1.png" alt="1jpg" class="img-xyz">
+                        <a href="./worksDetails.html" class="hideTitle">
+                            <span><em>Reach.live</em><em>Iterative Design</em>
+
+                            </span>
+                        </a>
+                        <!-- <a href="#" class="showTitle"><span>Reach.live</span><span>Iterative Design<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project2.png" alt="1jpg" class="img-xyz">
+                        <a href="./website.html" class="hideTitle"><span><em>Sushi Restaurant</em><em>Wesbite
+                                    Redesign</em></span></a>
+                        <!-- <a href="#" class="showTitle"><span>Sushi Restaurant</span><span>Wesbite Redesign<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project3.png" alt="1jpg" class="img-xyz">
+                        <a href="./treeGift.html" class="hideTitle"><span><em>Tree Gift App</em><em>Product
+                                    Designer</em></span></a>
+                        <!-- <a href="#" class="showTitle"><span>Tree Gift App</span><span>Product Designer<span></a> -->
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="hideImgTitle posrelative">
+                        <img src="images/project4.jpg" alt="1jpg" class="img-xyz">
+                        <a href="./testing.html" class="hideTitle"><span>
+                                <em>Plant Shop</em><em>A/B Testing</em>
+                            </span></a>
+                        <!-- <a href="#" class="showTitle"><span>Tree Gift App</span><span>Product Designer<span></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<!-- <script>    
+  let hideTitle = document.querySelectorAll(".project-covers .hideTitle")
+  let project = document.querySelector(".project-covers").children
+    if(document.body.clientWidth>1025){
+       
+      
+    // console.log(project);
+    [...project].forEach(item=>{
+        item.onmouseenter= function(){
+            
+            this.querySelector(".hideTitle").style.opacity="1"
+            this.querySelector(".hideTitle").style.transition="all 0.1s"
+          
+        console.log(0)
+        }
+        item.onmouseleave = function(){
+         
+            this.querySelector(".hideTitle").style.opacity="0"
+            this.querySelector(".hideTitle").style.paddingTop="800px"
+            this.querySelector(".hideTitle").style.transition="all 1s"
+            this.addEventListener("transitionend",function(e){
+                this.querySelector(".hideTitle").style.paddingTop="300px"
+                this.querySelector(".hideTitle").style.transition="all 0.1s"
+        })
+        }
+       
+    })
+    }
+    else{
+        [...project].forEach(item=>{
+            console.log(item)
+            // item.querySelector(".hideTitle").style.background= "transparent"
+            item.querySelector(".hideTitle").style.opacity= "1"
+            item.querySelector(".hideTitle").style.paddingTop= "80px"
+            
+            item.querySelector(".hideTitle").style.lineHeight= "30px"
+    })
+    document.querySelector(".Projects").onclick= function(){
+        document.querySelector(".Projects_click").style.display='block'
+    }
+    }
+   
+</script> -->
+
+</html>

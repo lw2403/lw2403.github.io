@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>A/B Testing</title>
+    <script src="https://kit.fontawesome.com/0b0aaefd63.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #f4f4f4;">
+    <header>
+        <div>
+            <div>
+                <figure class="brand"></figure>
+                <nav class="menu">
+
+                    <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="menu-icon"><img src="images/dot.png"></label>
+                    <ul>
+                        <li><a href='./index.html'>
+                                Home</a>
+                        </li>
+                        <li class="Projects">
+                           <a href="javascript:;"> Projects</a>
+                            <div class="Projects_click">
+                                <a href="./learnwithgpt.html">Learnwithgpt</a>
+                                <a href="./worksDetails.html">Reach.live</a>
+                                <a href="./website.html">Sushi</a>
+                                <a href="./treeGift.html">Tree App</a>
+                                <a href="./testing.html">A/B Testing</a>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <a href='product.html'>About</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href='#'>Contact</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href='#'>Resume</a>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="details-masthead warp">
+        <h2 class="details-masthead-title">
+            A/B Testing
+        </h2>
+        <h5 class="details-masthead-Subtitle">
+            Plant Shop
+        </h5>
+        <div class="details-masthead-banner">
+            <img src="./images/c1.png" alt="">
+        </div>
+    </div>
+
+    <div class="details-main warp">
+        <div class="details-main-overview">
+            <div class="overview-title multiplexing">
+                <i></i>
+                <h4>Overview</h4>
+            </div>
+            <p class="overview-text">
+                I designed 2 versions of a plant shop website, and performed an A/B test on the two designs. The goal is
+                to measure which of the two designs is better at achieving a predefined task and goal. The task for
+                users is to checkout their cart with at least $150 of cacti/succulents. The 2 metrics that were run on
+                statistical tests were: Time to Completion and Return Rate.
+            </p>
+            <div class="overview-tisp">
+                <!-- <div class="overview-tisp-img">
+                    <img src="./images/12.png" alt="">
+                </div> -->
+                <div class="overview-tisp-list">
+                    <div class="overview-tisp-list-item"> <i class="far fa-address-card"></i>
+                        <p>Timeline: 2 weeks</p>
+                    </div>
+                    <div class="overview-tisp-list-item"><i class="fas fa-palette"></i>
+                        <p>Tools: Python + Heroku Logs + Visual Studio</p>
+                    </div>
+                    <div class="overview-tisp-list-item"> <i class="fas fa-hourglass-half"></i>
+                        <p>Context: Brown CS1300 A/B Testing Project</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="details-main-context">
+            <div class="overview-title">
+                <i></i>
+                <h4>Context</h4>
+            </div>
+            <p class="context-text">
+                This is one of the projects from CS1300(an UIUX class at Brown). I first designed 2 versions of the cacti website
+                and formed statistical hypotheses. Next, I developed a website that randomly assigns version A or B to
+                a user. Then, I sent the deployed website out to collect data. I extracted data from the Heroku logs, and transitioned the data to an
+                excel sheet. Lastly, I cleaned and ran the data with python scripts I developed. I interpreted and analyzed the statistical 
+                results in relation to my design goals. 
+                <em>I find this project to be particularly interesting because I learned to use data and
+                    statistical analysis to gain deeper insights into the effectiveness of my own design choices.</em>
+            </p>
+            <div class="testing-Github">
+                <a href="https://morning-escarpment-42493.herokuapp.com/" id="web" class="Website">
+                    <i class="fas fa-external-link-alt fa-3x"></i>
+                    <p>Deployed Cacti Website</p>
+                </a>
+                <!-- <a href="https://morning-escarpment-42493.herokuapp.com/" class="Website">
+                    <i class="fas fa-external-link-alt fa-3x"></i>
+                    <p>Deployed Cacti Website</p>
+                </a> -->
+                <a href="https://hao.lenovo.com.cn/?c=flash_browser" id="git" class="Website">
+                    <!-- <i class="fab fa-github-square"></i> -->
+                    <i class="fab fa-github fa-3x"></i>
+                    <p>View Code on Github</p>
+                </a>
+            </div>
+            <div class="Prototype-Final">
+                <div class="Prototype-Final-content">
+                    <h5 class="Prototype-Final-title">Process</h5>
+                    <p>
+                        <a href="#pro">PROBLEM</a><em>-></em>
+                        <a href="#des">DESIGN</a><em>-></em>
+                        <!-- <a href="javascript:;">Deliver</a><em>-></em> -->
+                        <a href="#dat">DATA</a><em>-></em>
+                        <a href="#tte">T-TEST</a><em>-></em>
+                        <a href="#cte">CHI^2-TEST</a><em>-></em>
+                        <a href="#inf">INFOGRAPHICS</a><em>-></em>
+                        <a href="#con">CONCLUSSION</a>
+                    </p>
+                </div>
+            </div>
+            <div id="pro" class="testing-Prototype-Landing-text Prototype-Landing-text">
+                <span>👉👉👉PROBLEM</span>
+                <p> The problem I am tackling with the help of A/B testing is which design is better and more efficient at helping users checkout $150 worth of items based on the time
+                    to complete the task and the return rate of users. 
+                </p>
+                <!-- <span>Explore Events Page Before User Login (right)</span>
+                <p>The Explore Events page enables users to quickly look at events hosted on Reach.live. The events
+                    are
+                    divided based on different categories. Events that are approaching will be prioritized and
+                    appear
+                    first. This is an important page to incentivize users to sign up given it’s a startup trying to
+                    attract first time users.</p> -->
+            </div>
+            <div id="des" class="testing-design">
+                <h3>DESIGN</h3>
+                <p>Differentiate A & B</p>
+                <div class="overview-title">
+                    <i></i>
+                    <h4>Layout</h4>
+                </div>
+                <p>Version A’s interface has 1 item per line. Version B’s interface has 2 item per line. A
+                    require more scrolling than B whereas B does not require users to scroll on a computer screen.</p>
+                <div class="overview-title">
+
+                    <h4>Shopping Cart & Checkout Button</h4>
+                </div>
+                <p>Version A's checkout button (the shopping cart icon) is in a less optimal spot. It's located at the
+                    bottom left corner. Version B's checkout button (the shopping cart icon) is in a better spot as user
+                    can easily find it. It's apparent when user first sees the page on the right side.</p>
+                <div class="overview-title">
+
+                    <h4>Information Display Order</h4>
+                </div>
+                <p>Version A's "Add To Cart" button is below the item description and price. This design choice makes
+                    the price information more readable for users. Version B's "Add To Cart" button is above the item
+                    description and price. It can be harder for users to pay attention to price and item which are
+                    important for $150 goal. </p>
+            </div>
+            <div class="testing-Version">
+                <span>Version A</span>
+                <img src="./images/c2.png" alt="">
+                <span>Version B</span>
+                <img src="./images/c3.png" alt="">
+            </div>
+        </div>
+        <div id="dat" class="Prototype testing-Prototype">
+            <h3>DATA</h3>
+            <h5>The process of setting up the A/B Test</h5>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Collecting</h4>
+
+            </div>
+            <p class="Prototype-info">
+                I sent my heroku link to my friends, family, and 2 group chats consisting of 20 people each. I tried to
+                aim for a diverse sample by targeting people in different age groups. 40 people I asked were in their
+                20s, 20 people in their 30s-50s, and 5 people in their 50-60s. In the end, I had 23 people completed the
+                task and were users who participated. Unfortunately, I do not know the background and demographic of
+                people who actually completed the link. However, I gave a clear and standard instruction in text to
+                everyone I reached out to. I asked them to check out $150 worth of items, and that is the only
+                information I gave.
+            </p>
+
+            <div class="treeGift-Phase-total">
+                <div class="treeGift-Phase-total-item">
+                    <h6>23</h6>
+                    <p>task results</p>
+                </div>
+                <div class="treeGift-Phase-total-item">
+                    <h6>3</h6>
+                    <p>age groups</p>
+                </div>
+            </div>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Process</h4>
+
+            </div>
+            <img src="./images/c4.png" alt="">
+        </div>
+        <div id="tte" class="Prototype testing-Prototype">
+            <h3>T-TEST</h3>
+            <h5>A test for Time to Completion</h5>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Time to Completion</h4>
+
+            </div>
+            <p class="Prototype-info">
+                I ran the T-Test from the python scripts I developed in an earlier class assignment to analyze time for
+                a user to complete his or her $150 task. I defined the test, and explained my reasons for my alternative
+                hypothesis below.
+            </p>
+
+            <div class="wireframe-bottom">
+                <span>Definition of Time to Completion: </span>
+                <p>The time difference of when a user starts and finishes the $150 task. </p>
+                <span>Null Hypothesis:</span>
+                <p>The true difference between time to completion for design A and design B is zero.</p>
+                <span>Alternative Hypothesis:</span>
+                <p>The true difference between time to completion for design A and design B is different from zero. </p>
+            </div>
+        </div>
+        <div class="details-main-solution testing-main-solution">
+            <!-- <div class="overview-title">
+                <i></i>
+                <h4>Overview</h4>
+            </div> -->
+            <div class="solution-text">
+                <div class="solution-text-item Discover">
+                    <div class="solution-text-item-left">
+                        <h5>A’s Layout</h5>
+                        <p>In design A, all items are on the left. Each row has 1 item. This will make users have to
+                            scroll down more and do more work to see all the items. Therefore, I think this layout will
+                            require more time for completion. And it’s an inefficient use of space.</p>
+                    </div>
+                    <div class="solution-text-item-img">
+                        <img src="./images/c5.png" alt="">
+                    </div>
+                </div>
+                <div class="solution-text-item Host">
+                    <div class="solution-text-item-img">
+                        <img src="./images/c6.png" alt="">
+                    </div>
+                    <div class="solution-text-item-left">
+                        <h5>B’s Layout</h5>
+                        <p>In design B, users don’t need to scroll down to see and add the items. 
+                            This is a more optimal layout because it saves the user’s time in scrolling and completing the task. 
+                            When the user first enters the page, no additional action is required to see all items.</p>
+                    </div>
+
+                </div>
+                <div class="solution-text-item Analytics">
+                    <div class="solution-text-item-left">
+                        <h5>A’s Shopping Cart Button</h5>
+                        <p>Shopping Cart is on the bottom left side of the page. 
+                            It’s less obvious to users and they may need more time to find a shopping cart 
+                            checkout button because usually it’s located at the bottom right. 
+                            Also, more scrolling is required to reach the bottom of the page.</p>
+                    </div>
+                    <div class="solution-text-item-img">
+                        <img src="./images/c7.png" alt="">
+                    </div>
+                </div>
+                <div class="solution-text-item Host">
+                    <div class="solution-text-item-img">
+                        <img src="./images/c6.png" alt="">
+                    </div>
+                    <div class="solution-text-item-left">
+                        <h5>B’s Shopping Cart Button</h5>
+                        <p>Design B’s Shopping Cart is in a more optimal spot because the distance between 
+                            the items and the button is much closer than A. 
+                            Users don’t need to scroll to the bottom in order to checkout items.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="testing-Prototype">
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Result</h4>
+
+            </div>
+            <p class="Prototype-info">
+                <em style="color:rgba(50, 87, 219, 1)">i failed to reject the null hypothesis.</em> From the data output
+                , we can see 95% of the time, the true difference will be 0. My p-value of 0.0567
+                is slightly larger than 0.05. So, I fail to reject the null hypothesis of no difference between my
+                design A and design B time to completion. However I think that there is likely a difference between the
+                2 designs, but the sample is not big or diverse enough that we still fail to reject the null hypothesis.
+            </p>
+
+            <div class="treeGift-Phase-total">
+                <div class="treeGift-Phase-total-item">
+                    <h6>-1.698</h6>
+                    <p>t-score</p>
+                </div>
+                <div class="treeGift-Phase-total-item">
+                    <h6>0.0567</h6>
+                    <p>p-value</p>
+                </div>
+                <div class="treeGift-Phase-total-item">
+                    <h6>95%</h6>
+                    <p>confidence interval</p>
+                </div>
+            </div>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Why?</h4>
+
+            </div>
+            <p class="leftp">1️⃣ The sample pool is not diverse enough given the time of this assignment. </p>
+            <p class="leftp">2️⃣ The sample is simply too
+                small that it’s not representative. </p>
+            <p class="leftp">3️⃣ The 2 designs are not vastly different given the template.</p>
+        </div>
+        <div id="cte" class="Prototype testing-Prototype">
+            <h3>CHI-SQUARED TEST</h3>
+            <h5>A test for Return Rate</h5>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Return Rate</h4>
+
+            </div>
+            <p class="Prototype-info">
+                I ran the Chi-squared Test from the python scripts I developed in an earlier class assignment to analyze
+                time for a user to complete his or her $150 task. I defined the test, and explained my reasons for my
+                alternative hypothesis below.
+            </p>
+
+            <div class="wireframe-bottom">
+                <span>Definition of Return Rate:</span>
+                <p>Users are counted as “returned” users when they return to the shopping page after checkout. </p>
+                <span>Null Hypothesis:</span>
+                <p>The true difference between return rate for design A and design B is zero.</p>
+                <span>Alternative Hypothesis:</span>
+                <p>The true difference between return rate for design A and design B is different from zero. </p>
+            </div>
+        </div>
+        <div class="details-main-solution testing-main-solution">
+            <!-- <div class="overview-title">
+                <i></i>
+                <h4>Overview</h4>
+            </div> -->
+            <div class="solution-text">
+                <div class="solution-text-item Discover">
+                    <div class="solution-text-item-left">
+                        <h5>A’s Information Display</h5>
+                        <p>In design A, “Add To Cart” button is below the item description and price. This design is
+                            more readable for users to get information on what they want to buy. Users see the
+                            description and price first which helps them do mental math to add things up to $150 so they
+                            don’t have to return to the page.</p>
+                    </div>
+                    <div class="solution-text-item-img">
+                        <img src="./images/c9.png" alt="">
+                    </div>
+                </div>
+                <div class="solution-text-item Host">
+                    <div class="solution-text-item-img">
+                        <img src="./images/c10.png" alt="">
+                    </div>
+                    <div class="solution-text-item-left">
+                        <h5>B’s Information Display</h5>
+                        <p>Version B’s “Add To Cart” button is above the item description and price. Users see a button
+                            to add before they see description and price. This can make users not add things up to $150
+                            in the first go because they are likely to just click add, and return to the page if they
+                            don’t meet $150.</p>
+                    </div>
+
+                </div>
+                <div class="solution-text-item Analytics">
+                    <div class="solution-text-item-left">
+                        <h5>A’s Button & Layout</h5>
+                        <p>Shopping Cart is at a less optimal spot because it’s on the bottom left side of the page.
+                            There is only 1 item per line, users need to scroll more. So, they don’t want to come back
+                            to this page and do everything again. Therefore, they rather achieve $150 in one go, and not
+                            return to the page after clicking checkout.</p>
+                    </div>
+                    <div class="solution-text-item-img">
+                        <img src="./images/c11.png" alt="">
+                    </div>
+                </div>
+                <div class="solution-text-item Host">
+                    <div class="solution-text-item-img">
+                        <img src="./images/c12.png" alt="">
+                    </div>
+                    <div class="solution-text-item-left">
+                        <h5>B’s Button & Layout</h5>
+                        <p>B’s layout lets users see all the items and the shopping cart button on one page. No
+                            scrolling is required. Less scrolling needed, and users will want to avoid doing mental
+                            math. They expect to not meet $150 in the first go, and rather return to the page to add
+                            more items.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="testing-Prototype">
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Result</h4>
+
+            </div>
+            <p class="Prototype-info">
+                <em style="color:rgba(50, 87, 219, 1)">i failed to reject the null hypothesis.</em> From the data output
+                , we can see 95% of the time, the true difference will be 0. My p-value of 0.06188
+                is slightly larger than 0.05. So, I fail to reject the null hypothesis of no difference between design A
+                and design B return rate. However this t-score is big, and therefore I think that there is likely a
+                difference between the 2 design. However the restriction including sample size is not diverse enough
+                that we still fail to reject the null hypothesis.
+            </p>
+
+            <div class="treeGift-Phase-total">
+                <div class="treeGift-Phase-total-item">
+                    <h6>3.486</h6>
+                    <p>chi^2 value</p>
+                </div>
+                <div class="treeGift-Phase-total-item">
+                    <h6>0.06188</h6>
+                    <p>p-value</p>
+                </div>
+                <div class="treeGift-Phase-total-item">
+                    <h6>95%</h6>
+                    <p>confidence interval</p>
+                </div>
+            </div>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Why?</h4>
+
+            </div>
+            <p class="leftp">1️⃣ The 23 sample size is too small particularily for Chi-squared test which demands a
+                large sample size. </p>
+            <p class="leftp">2️⃣ Sample is not diverse enough. </p>
+            <p class="leftp">3️⃣ The designs of A and B are not vastly different given the simple template.</p>
+        </div>
+        <!--  -->
+        <div id="inf" class="wireframe testing-wireframe">
+            <h3>INFOGRAPHICS</h3>
+            <h5>Presenting Results in a Fun Way</h5>
+            <div class="testing-Infographics">
+                <div class="testing-Infographics-item">
+                    <span>Infographics part 1 </span>
+                    <img src="./images/c13.png" alt="">
+                </div>
+                <div class="testing-Infographics-item">
+                    <span>Infographics part 2 </span>
+                    <img src="./images/c14.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="con" class="conclusion testing-conclusion">
+            <h3>CONCLUSION</h3>
+            <span>What I learned about the project and A/B testing</span>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Results</h4>
+
+            </div>
+            <p class="Prototype-info">
+                I learned that my designs for interface A and interface B were not significant for Time to Completion &
+                Return Rate. I think the result may have been related to reasons I listed earlier such as the sample is not 
+                large and diverse enough. However, through comparing individual user sessions, I see
+                that users mostly had a shorter time to completion and lower return rate for design B which is what I
+                initially thought.
+            </p>
+            <div class="Prototype-title">
+                <i></i>
+                <h4>Take-away</h4>
+
+            </div>
+            <p class="Prototype-info">
+                In general, this is one of my favorite projects in the class because I was taught to use data to gain
+                insights into my design. Overall, I realized a more optimal layout, navigation, and affordability can
+                save users’ time to meet their goal even though my project results were not significant. I look forward
+                to use A/B testing in the future on my other projects.
+            </p>
+        </div>
+
+    </div>
+    <script src="./js/index.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
